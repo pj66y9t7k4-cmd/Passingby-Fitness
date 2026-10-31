@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { TelegramBot } = require('grammy');
+const { Bot } = require('grammy');
 const { createClient } = require('@supabase/supabase-js');
 
 const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN || '9086222283:AAG_UyX97x9nNcG1AwvK0UehpVDkIEXH23E';
@@ -13,7 +13,7 @@ if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
 }
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
-const bot = new TelegramBot(TELEGRAM_TOKEN);
+const bot = new Bot(TELEGRAM_TOKEN);
 
 const sessions = {};
 

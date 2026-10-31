@@ -1,0 +1,32 @@
+{
+  "name": "fitbod-clone-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://<your-username>.github.io/fitbod-clone-react",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "dotenv": "^18.0.9",
+    "grammy": "^1.46.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "gh-pages": "^6.3.0",
+    "oxlint": "^1.89.0",
+    "vite": "^8.3.5"
+  }
+}
